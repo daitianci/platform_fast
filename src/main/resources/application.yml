@@ -1,2 +1,15 @@
 server:
-  port: 80
+  servlet:
+    context-path: /
+#  一旦设置了debug=true 日志级别自动降到 debug
+#debug: true
+spring:
+  http:
+    encoding:
+      charset: utf-8
+  thymeleaf:
+    cache: false
+  mvc:
+    date-format: yyyy-MM-dd
+  profiles:
+    active: prod
